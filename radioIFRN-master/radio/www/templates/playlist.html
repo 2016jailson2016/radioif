@@ -1,0 +1,11 @@
+<ion-view title="Playlist" id="page6">
+
+  <ion-content padding="false" style="background: url(img/3HWI7DL8RuaulfujyVfw_audio-1839162_640.jpg) no-repeat center;background-size:cover;" class="has-header">
+<h2>Playlist ►</h2>
+<ion-list>
+      <ion-item  ng-repeat="musica in musicas" type="item-text-wrap">
+      <ion-checkbox ng-model="filter.artista" ><h3 style="color:white">{{musica.nome}}</h2><p style="color:blue">{{musica.artista}}</p></ion-checkbox>
+      </ion-item>
+
+  </ion-content>
+</ion-view>

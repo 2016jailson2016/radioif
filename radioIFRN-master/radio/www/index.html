@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+        <title></title>
+        <link rel="manifest" href="manifest.json">
+        <script src="lib/ionic/js/ionic.bundle.js"></script>
+        <!-- cordova script (this will be a 404 during development) -->
+        <script src="cordova.js"></script>
+        <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
+    <link href="css/ionic.app.css" rel="stylesheet">
+    -->
+        <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+        <style type="text/css">
+            .platform-ios .manual-ios-statusbar-padding {
+                padding-top: 20px;
+            }
+
+            .manual-remove-top-padding {
+                padding-top: 0px;
+            }
+
+            .manual-remove-top-padding .scroll {
+                padding-top: 0px !important;
+            }
+
+            ion-list.manual-list-fullwidth div.list, .list.card.manual-card-fullwidth {
+                margin-left: -10px;
+                margin-right: -10px;
+            }
+
+            ion-list.manual-list-fullwidth div.list > .item, .list.card.manual-card-fullwidth > .item {
+                border-radius: 0px;
+                border-left: 0px;
+                border-right: 0px;
+            }
+
+            .show-list-numbers-and-dots ul {
+                list-style-type: disc;
+                padding-left: 40px;
+            }
+
+            .show-list-numbers-and-dots ol {
+                list-style-type: decimal;
+                padding-left: 40px;
+            }
+
+            .login-custom {
+                background-color: #000;
+                background-image: url(../img/QKOdXHYoQeC5yifg2fDj_audio-1839162_640.jpg);
+                background-size: cover;
+                background-position: center;
+            }
+
+            .list {
+                width: 75%;
+                margin: auto;
+                margin-top: 20px;
+            }
+
+            .item {
+                background: none;
+                border: none;
+            }
+
+            .item-input {
+                border-bottom: 1px solid #fff;
+            }
+
+            .item-input i {
+                color: #fff;
+                font-size: 25px;
+            }
+
+            .item-custom {
+                margin-top: 50px;
+                color: #fff;
+                font-size: 65px;
+            }
+
+            .item-input input {
+                font-size: 16px;
+                margin-left: 10px;
+                color: #fff;
+            }
+
+            .item-button {
+                padding: 0;
+            }
+
+            h1 {
+                font-family: 'Comic Sans MS';
+                color: #fff;
+                text-align: center;
+                font-size: 50px;
+                padding-top: 40px;
+                margin-bottom: -20px;
+            }
+
+            h1 span {
+                font-family: 'Comic Sans MS';
+                font-size: 28px;
+                position: absolute;
+                margin-top: 55px;
+                margin-left: -35px;
+                color: #fff;
+            }
+
+            h2 {
+                color: #fff;
+            }
+
+            span {
+                color: #fff;
+            }
+
+            .h1-custom {
+                opacity: 0.6;
+                filter: alpha(opacity=60);
+            }
+
+            .list-custom .item {
+                border-width: 0;
+                border-bottom-width: 1px;
+                border-top-width: 1px;
+            }
+
+            .list-custom .item:first-child {
+                border-top-width: 0;
+            }
+
+            .list-custom button {
+                margin-top: 8px;
+                border-radius: 50%;
+                width: 40px;
+                height: 40px;
+            }
+
+            .list-custom button i {
+                margin-left: -2px;
+                margin-top: 4px;
+            }
+
+            .button.button-stable, .button.button-stable:hover {
+                background-color: #d0d5d8;
+                color: #fff;
+            }
+
+            .bar-transparent {
+                background: none;
+            }
+
+            .bar-transparent button {
+                color: #fff;
+            }
+
+            #preview {
+                background-size: cover;
+                height: 60%;
+                background-position: center;
+                position: relative;
+            }
+
+            .info-preview {
+                width: 100%;
+                position: absolute;
+                bottom: 0;
+                text-shadow: 1px 1px 0 rgba(0,0,0,0.8);
+            }
+        </style>
+        <script src="js/app.js"></script>
+        <script src="js/controllers.js"></script>
+        <script src="js/routes.js"></script>
+        <script src="js/directives.js"></script>
+        <script src="js/services.js"></script>
+        <!-- Only required for Tab projects w/ pages in multiple tabs
+    <script src="lib/ionicuirouter/ionicUIRouter.js"></script>
+    -->
+    </head>
+    <body ng-app="app" animation="slide-left-right-ios7">
+        <div>
+            <div>
+                <ion-nav-bar class="bar bar-header bar-stable">
+                    <ion-nav-back-button></ion-nav-back-button>
+                </ion-nav-bar>
+                <ion-nav-view></ion-nav-view>
+            </div>
+        </div>
+    </body>
+</html>

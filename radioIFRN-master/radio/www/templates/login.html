@@ -1,0 +1,29 @@
+<ion-view title="Login" id="page3" style="background-color:none;">
+    <ion-content padding="false" style="background: url(img/QKOdXHYoQeC5yifg2fDj_audio-1839162_640.jpg) no-repeat center;background-size:cover;" class="no-header">
+        <div class="spacer" style="width: ; height: 30px;"></div>
+        <h1 class="h1-custom">
+            Rádio <span>IFRN ZN</span>
+            <h1>
+                <ion-list class="list-inset">
+                    <form id="login-form1" class="list">
+                        <ion-item class="item-input" class="item item-input" id="login-input1">
+                            <i class="icon ion-ios-email-outline placeholder-icon"></i>
+                            <input type="text" ng-model="obj.email"placeholder="E-mail">
+                        </ion-item>
+                        <ion-item class="item-input">
+                            <i class="icon ion-ios-locked-outline placeholder-icon"></i>
+                            <input type="password" ng-model="obj.senha" placeholder="Senha">
+                        </ion-item>
+                        <ion-item class="item-button button-first">
+                            <button ui-sref="menu" id="login-button5" ng-click="login(obj)" class="button button-outline button-light  button-block">Log in</button>
+                        </ion-item>
+                        <ion-item class="item-button button-first">
+                            <button ui-sref="recuperarSenha" id="login-button9" class="button button-outline button-light  button-block ">Esqueci minha senha</button>
+                        </ion-item>
+                        <ion-item class="item-button button-first">
+                            <a ui-sref="cadastrar" id="login-button6" class="button button-light  button-block button-clear">Ou Crie uma conta</a>
+                        </ion-item>
+                    </form>
+                </ion-list>
+    </ion-content>
+</ion-view>

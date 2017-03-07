@@ -1,0 +1,31 @@
+.login-custom{
+  background-color: #000;
+  background-image: url(../img/QKOdXHYoQeC5yifg2fDj_audio-1839162_640.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.list{
+  width: 75%;
+  margin: auto;
+  margin-top: 60px;
+}
+.item{
+  background: none;
+  border: none;
+}
+.item-input{
+  border-bottom: 1px solid #fff;
+}
+.item-input i{
+  color: #fff;
+  font-size: 25px;
+}
+.item-input input{
+  font-size: 16px;
+  margin-left: 10px;
+  color: #fff;
+}
+.item-button{
+  padding: 0;
+}

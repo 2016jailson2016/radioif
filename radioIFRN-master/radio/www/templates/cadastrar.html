@@ -1,0 +1,36 @@
+<ion-view title="Cadastrar" id="page4">
+    <div class="bar bar-header">
+        <h1 class="title"></h1>
+    </div>
+    <ion-content padding="false" style="background: url(img/oGyv4ikzR8SaYijNlYje_audio-1839162_640.jpg) no-repeat center;background-size:cover;" class="has-header">
+        <h1 class="h1-custom">
+            Rádio IFRN
+            <h1>
+                <ion-list id="cadastrar-list6" class="list-inset">
+                    <form id="cadastrar-form2" class="list">
+                        <ion-item class="item item-input" >
+                            <i class="icon ion-ios-person-outline placeholder-icon"></i>
+                            <input type="text" ng-model="obj.nome" placeholder="Digite seu nome">
+                        </ion-item>
+
+                       <ion-item class="item item-input" >
+                            <i class="icon ion-ios-locked-outline placeholder-icon"></i>
+                            <input type="password" ng-model="obj.senha" placeholder="Senha">
+                        </ion-item>
+                        <ion-item class="item item-input" >
+                            <i class="icon ion-ios-email-outline placeholder-icon"></i>
+                            <input type="email" ng-model="obj.email" placeholder="E-mail">
+                        </ion-item>
+                      
+                        <ion-item class="item item-input" >
+                            <i class="icon ion-android-contract"></i>
+                            <input type="text" ng-model="obj.cpf" placeholder="CPF">
+                        </ion-item>
+                        
+                        <ion-item class="item-button button-first">
+                            <button  ng-click= "cadastro(obj)" class="button button-outline button-light button-block">Cadastrar</button>
+                        </ion-item>
+                    </form>
+                </ion-list>
+    </ion-content>
+</ion-view>
