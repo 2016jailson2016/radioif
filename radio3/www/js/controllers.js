@@ -51,6 +51,41 @@ angular.module('starter.controllers', [])
     { title: 'Cowbell', id: 6 }
   ];
 })
+.controller('administradorCtrl', // The following is the constructor function for this page's controller. See https://docs.angularjs.org/guide/controller
+// You can include any angular dependencies as parameters for this function
+// TIP: Access Route Parameters for your page via $stateParams.parameterName
+function ($scope, $http) {
+  //$scope.usuarios = [];
 
-.controller('PlaylistCtrl', function($scope, $stateParams) {
+  //$http.get('http://localhost:3000/api/users').then(
+    //function(data) {
+      // se deu certo
+    //  $scope.usuarios = data.data.Users;
+      //console.log($scope.usuarios);
+     // console.log("Deu certo");
+  //}, function(data) {
+      // se deu erro
+    // console.log('erro!');
+     // console.log(data);
+  //});
+
+  $scope.musicas = [];
+
+$scope.cadastroMusica=function(mus){
+    console.log(mus);
+    
+   $http.post('http://localhost:3000/api/music',mus).then(
+    function(data) {
+      // se deu certo
+      $scope.musicas=data.data.Music;
+      console.log("Deu certo");
+  }, function(data) {
+      // se deu erro
+      console.log('erro!');
+      console.log(data);
+  });
+}
+})
+
+.controller('administrador', function($scope, $stateParams) {
 });

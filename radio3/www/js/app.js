@@ -24,7 +24,15 @@ angular.module('starter', ['ionic', 'starter.controllers'])
 
 .config(function($stateProvider, $urlRouterProvider) {
   $stateProvider
-
+  .state('app.administrador', {
+    url: '/administrador',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/administrador.html',
+        controller: 'administradorCtrl'
+      }
+    }
+  })
     .state('app', {
     url: '/app',
     abstract: true,

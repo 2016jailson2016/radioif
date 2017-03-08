@@ -1,21 +1,15 @@
 <ion-view title="Administrador" id="page5">
   <ion-content class="padding" padding="true" style="background: url(img/RemhoWZqQmCthiaob9c2_audio-1839162_640.jpg) no-repeat center;background-size:cover;" class="has-header">
   <h2>Cadastrar musicas</h2>
-  <ion-list>
-    <ion-item class="item item-input" >                
-          <input type="text" ng-model="mus.nome" placeholder="Digite Nome da musica">
-          </ion-item>
-
-          <ion-item class="item item-input" > 
-
-          <input type="text" ng-model="mus.artista" placeholder="Digite o nome do artista">
-
-          </ion-item>
-          <ion-item class="item-button button-first">
-
-          <button  ng-click= "cadastroMusica(mus)" class="button button-outline button-light button-block">Cadastrar musica</button>
-
-     </ion-item>
+  <div class="list">
+    <label class="item item-input">
+      <input type="text" ng-model="mus.nome" placeholder="Digite Nome da musica">
+    </label>
+    <label class="item item-input">
+      <input type="text" ng-model="mus.artista" placeholder="Digite o nome do artista">
+    </label>
+  </div>
+  <button  ng-click= "cadastroMusica(mus)" class="button button-outline button-light button-block">Cadastrar musica</button>
 </ion-list>
     <h2>Lista de Usuários</h2>
     <ion-list>
