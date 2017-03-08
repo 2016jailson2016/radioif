@@ -60,8 +60,8 @@ $scope.cadastroMusica=function(mus){
 }
 })
    
-.controller('cadastrarCtrl', ['$scope', '$http',
-function ($scope, $http) {
+.controller('cadastrarCtrl',
+function ($scope, $http){
 
     $scope.usuarios = [];
 
@@ -70,7 +70,7 @@ $scope.cadastro=function(obj){
    $http.post('http://localhost:3000/api/users',obj).then(
     function(data) {
       // se deu certo
-      $scope.musicas=data.data.Users;
+      $scope.usuarios=data.data.Users;
       console.log("Deu certo");
   }, function(data) {
       // se deu erro
@@ -80,7 +80,7 @@ $scope.cadastro=function(obj){
 }
  
 
-}])
+})
   
   
 
@@ -128,21 +128,32 @@ function ($scope, $stateParams) {
 
 }])
    
-.controller('sugestEsCtrl', ['$scope', '$stateParams', // The following is the constructor function for this page's controller. See https://docs.angularjs.org/guide/controller
-// You can include any angular dependencies as parameters for this function
-// TIP: Access Route Parameters for your page via $stateParams.parameterName
-function ($scope, $stateParams) {
+.controller('sugestEsCtrl', 
+function ($scope, $http) {
+$scope.sugestoes = [];
 
+  $http.get('http://localhost:3000/api/sugest').then(
+    function(data){
+      // se deu certo
+      $scope.sugestoes = data.data.Sugest;
+      console.log($scope.sugestoes);
+      console.log("Deu certo");
+  }, function(data){
+      // se deu erro
+      console.log('erro!');
+      console.log(data);
+  });
 
-}])
+})
    
-.controller('procurarMSicaCtrl', ['$scope', '$stateParams', // The following is the constructor function for this page's controller. See https://docs.angularjs.org/guide/controller
+.controller('procurarMSicaCtrl',  // The following is the constructor function for this page's controller. See https://docs.angularjs.org/guide/controller
 // You can include any angular dependencies as parameters for this function
 // TIP: Access Route Parameters for your page via $stateParams.parameterName
 function ($scope, $stateParams) {
+console.log('UserRetrieveController');
 
 
-}])
+})
    
 .controller('recuperarSenhaCtrl', ['$scope', '$stateParams', // The following is the constructor function for this page's controller. See https://docs.angularjs.org/guide/controller
 // You can include any angular dependencies as parameters for this function

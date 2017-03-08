@@ -101,6 +101,32 @@ REST_ROUTER.prototype.handleRoutes = function(router,connection,md5) {
             }
         });
     });
+
+     router.get("/sugest",function(req,res){
+        var query = "SELECT * FROM ??";
+        var table = ["sugestoes"];
+        query = mysql.format(query,table);
+        connection.query(query,function(err,rows){
+            if(err) {
+                res.json({"Error" : true, "Message" : "Error executing MySQL query"});
+            } else {
+                res.json({"Error" : false, "Message" : "Success", "Sugestoes" : rows});
+            }
+        });
+    });
+
+     router.post("/sugest",function(req,res){
+        var query = "INSERT INTO ??(??,id_usuario) VALUES (?,1)";
+        var table = ["sugestoes","texto",req.body.texto];
+        query = mysql.format(query,table);
+        connection.query(query,function(err,rows){
+            if(err) {
+                res.json({"Error" : true, "Message" : "Error executing MySQL query"});
+            } else {
+                res.json({"Error" : false, "Message" : "Sugestao adicionada !"});
+            }
+        });
+    });
 }
 
 module.exports = REST_ROUTER;

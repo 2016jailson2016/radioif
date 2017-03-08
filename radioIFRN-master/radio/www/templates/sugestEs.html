@@ -1,6 +1,16 @@
 <ion-view title="Sugestões" id="page10">
   <ion-content padding="true" style="background: url(img/POjKe7bT1WxN1y5WJqAA_audio-1839162_640.jpg) no-repeat center;background-size:cover;" class="has-header">
 <h1 class="h1-custom">Rádio IFRN<h1>
+	    <h2>Sugestoes...</h2>
+
+    <ion-list>
+      <ion-item class="item-remove-animate item-avatar item-icon-right" ng-repeat="sugest in sugestoes" type="item-text-wrap">
+        <p style="color:red">ID SUGESTOES: {{sugest.id_sugestoes}} </p>
+        <p style="color:red">SUGESTOES: {{sugest.texto}} </p>  
+        <p style="color:red">SUGESTOES: {{sugest.id_usuario}} </p> 
+        <i class="icon ion-chevron-right icon-accessory"></i>
+      </ion-item>
+    </ion-list>
 
   </ion-content>
 </ion-view>
